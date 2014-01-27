@@ -1,0 +1,71 @@
+<% include header.ejs %>
+
+
+<script>
+    <% if(error){ %>
+    alert("<%=error%>");
+    <%}%>
+    <% if(success){%>
+    alert("<%=success%>");
+    window.location="/user/login";
+    <%}%>
+</script>
+
+
+
+<form class="form-horizontal" action="/user/reg" method="post">
+    <fieldset>
+        <div id="legend" class="">
+            <legend class="">用户注册</legend>
+        </div>
+
+
+        <div class="control-group">
+
+            <!-- Text input-->
+            <label class="control-label" for="input01">账　　号：</label>
+            <div class="controls">
+                <input type="text" name="username" placeholder="登录用户名（仅支持英文和数字组合）" class="input-xlarge">
+            </div>
+        </div>
+
+
+
+        <div class="control-group">
+
+            <!-- Text input-->
+            <label class="control-label" for="input01">密　　码：</label>
+            <div class="controls">
+                <input type="password" name="password" placeholder="请输入您的登录密码" class="input-xlarge">
+            </div>
+        </div>
+        <div class="control-group">
+
+            <!-- Text input-->
+            <label class="control-label" for="input01">确认密码：</label>
+            <div class="controls">
+                <input type="password" name="repasswd" placeholder="请确认您的登录密码" class="input-xlarge">
+            </div>
+        </div>
+        <div class="control-group">
+
+            <!-- Text input-->
+            <label class="control-label" for="input01">常用邮箱：</label>
+            <div class="controls">
+                <input type="text" name="email" placeholder="example@163.com" class="input-xlarge">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label"></label>
+
+            <!-- Button -->
+            <div class="controls">
+                <button class="btn btn-primary btn-large">注册</button>
+                <a href="/user/login" style="margin-left: 30px;">已有账号，直接登录！</a>
+            </div>
+        </div>
+
+
+    </fieldset>
+</form>
+<% include footer.ejs%>

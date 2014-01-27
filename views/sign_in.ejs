@@ -1,0 +1,73 @@
+<% include header.ejs %>
+<script>
+    function sign_in(){
+        $.post('/sign/sign_in',function(res){
+
+        });
+    }
+    function sign_out(){
+        $.post('sign/sign_out',function(){
+
+        });
+    }
+    function sign_history(){
+        location = "/sign/sign_history";
+    }
+</script>
+<div class="container">
+    <div class="row clearfix">
+        <div class="span6 column ui-sortable">
+            <blockquote>
+                <p>
+                <h2>上下班登记<button type="button" class="btn btn-primary" style="margin-left: 20px;margin-top: -5px;" onclick="javascript:sign_history();">查看考勤历史</button></h2>
+                </p> <p>当前系统时间 11:32</p>
+            </blockquote>
+        </div>
+        <div class="span6 column ui-sortable">
+
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="span12 column">
+            <table class="table  table-bordered">
+                <style>
+                    .table tbody td{
+                        line-height: 60px;
+                    }
+                </style>
+                <thead>
+                <tr>
+                    <th>
+                        <h4>规定时间</h4>
+                    </th>
+                    <th>
+                        <h4>登记</h4>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <h2>09:00</h2>
+                    </td>
+                    <td>
+                       <button id="unSignInBtn" class="btn btn-large btn-primary" type="button" onclick="javascript:sign_in();">出勤</button>
+                       <button id="hasSignInBtn" class="btn btn-large" type="button" style="display: none">已出勤</button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h2>18:00</h2>
+                    </td>
+                    <td>
+                        <button class="btn btn-large btn-primary btn-success" type="button" onclick="javascript:sign_out();">退勤</button>
+                        <button id="hasSignInBtn" class="btn btn-large" type="button" style="display: none">已退勤</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<% include footer.ejs%>

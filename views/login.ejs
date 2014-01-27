@@ -1,0 +1,48 @@
+<% include header.ejs %>
+
+<script>
+    <% if(error){ %>
+    alert("<%=error%>");
+    <%}%>
+</script>
+
+<form class="form-horizontal" action="/user/login" method="post">
+    <fieldset>
+        <div id="legend" class="">
+            <legend class="">用户登录</legend>
+        </div>
+        <div class="control-group">
+
+            <!-- Text input-->
+            <label class="control-label" for="input01">账号</label>
+            <div class="controls">
+                <input type="text" name="username" placeholder="请在此输入您的账号" class="input-xlarge">
+            </div>
+        </div>
+
+
+
+        <div class="control-group">
+
+            <!-- Text input-->
+            <label class="control-label" for="input01">密码</label>
+            <div class="controls">
+                <input type="password" name="password" placeholder="请在此输入您的密码" class="input-xlarge">
+                <!--   <p class="help-block">忘记密码</p>-->
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label"></label>
+
+            <!-- Button -->
+            <div class="controls">
+                <button class="btn btn-primary btn-large">登陆</button>
+                <a href="/user/reg" style="margin-left: 30px;">还没有账号？ 马上注册！</a>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+<% include footer.ejs%>
