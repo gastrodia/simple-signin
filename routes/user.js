@@ -53,11 +53,14 @@ exports.routes = function(app){
         if(!postUser.username){
             return err_back('用户名不能为空');
         }
+        if(!postUser.realname){
+            return err_back('真实姓名不能为空');
+        }
         if(!isSafeUsername(postUser.username)){
             return err_back('用户名只能输入5-20个以字母开头、可带数字、“_”、“.”的字串 ')
         }
         if(!postUser.password){
-            return err_back("请输入登录密码！")
+            return err_back("请输入登录密码！");
         }
         if(postUser.password!=postUser.repasswd){
             return err_back('两次输入的密码不一致!');
@@ -85,7 +88,7 @@ exports.routes = function(app){
                               req.flash('error','您输入的邮箱已存在!');
                               res.redirect('/user/reg');
                           }else{
-                              conn.query("insert into user set ?",{username:postUser.username,password:password,email:postUser.email},function(err, result){
+                              conn.query("insert into user set ?",{username:postUser.username,password:password,email:postUser.email,realname:postUser.realname},function(err, result){
                                   if (err) throw err;
                                   if(result.insertId){
                                       req.flash('success','注册成功，返回登录！');
