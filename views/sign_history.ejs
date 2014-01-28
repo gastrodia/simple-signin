@@ -25,36 +25,31 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>TB - Monthly</td>
-                    <td>01/04/2012</td>
-                    <td>正常考勤</td>
+                <% signList.forEach(function (sign) {
+                %>
+                <tr <%
+                    if(sign.signStatus == "正常"){
+                        %>
+                        class="success"
+                        <%
+                    }else if(sign.signStatus == "迟到" || sign.sign_status == "早退"){
+                        %>
+                        class="warning"
+                        <%
+                    }else{
+                        %>
+                        class="error"
+                        <%
+                    }
+                  %>>
+                    <td><%=sign.signDate%></td>
+                    <td><%=sign.signInTime%></td>
+                    <td><%=sign.signOutTime%></td>
+                    <td><%=sign.signStatus%></td>
                 </tr>
-                <tr class="success">
-                    <td>1</td>
-                    <td>TB - Monthly</td>
-                    <td>01/04/2012</td>
-                    <td>正常</td>
-                </tr>
-                <tr class="error">
-                    <td>2</td>
-                    <td>TB - Monthly</td>
-                    <td>02/04/2012</td>
-                    <td>迟到</td>
-                </tr>
-                <tr class="warning">
-                    <td>3</td>
-                    <td>TB - Monthly</td>
-                    <td>03/04/2012</td>
-                    <td>早退</td>
-                </tr>
-                <tr class="info">
-                    <td>4</td>
-                    <td>TB - Monthly</td>
-                    <td>04/04/2012</td>
-                    <td></td>
-                </tr>
+                <%
+                })%>
+
                 </tbody>
             </table>
         </div>
