@@ -17,7 +17,7 @@ exports.routes = function(app){
             if(rows.length>0){
                 hasSignIn = true;
             }
-            var sql = "select * from sign where sign_date = '" + today_str + "' and is_sign_in = 0";
+            var sql = "select * from sign where sign_date = '" + today_str + "' and is_sign_in = 0 and userid = " + req.session.user.id;
             conn.query(sql,function(err,rows){
                 if(rows.length>0){
                     hasSignOut = true;

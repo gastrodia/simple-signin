@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="939029df-7f7c-4b29-8220-a59c4dd8d466" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/sign.js" afterPath="$PROJECT_DIR$/routes/sign.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sign_history.ejs" afterPath="$PROJECT_DIR$/views/sign_history.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sign_in.ejs" afterPath="$PROJECT_DIR$/views/sign_in.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simple-signin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,22 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sign.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/sign.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="44" selection-start="3299" selection-end="3299" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="2869">
+            <state line="19" column="99" selection-start="828" selection-end="828" vertical-scroll-proportion="0.5879479" vertical-offset="0" max-vertical-offset="3268">
               <folding>
-                <element signature="e#190#1140#0" expanded="false" />
-                <element signature="e#5246#6302#0" expanded="false" />
+                <element signature="e#5282#6338#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign_history.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sign_history.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/sign_history.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="26" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.77303755" vertical-offset="174" max-vertical-offset="1121">
+            <state line="33" column="26" selection-start="978" selection-end="978" vertical-scroll-proportion="-16.857143" vertical-offset="60" max-vertical-offset="1121">
               <folding>
                 <element signature="tag#tr#0;tag#thead#0;tag#table#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
               </folding>
@@ -136,8 +132,8 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/simple_signin.sql" />
         <option value="$PROJECT_DIR$/views/sign_in.ejs" />
-        <option value="$PROJECT_DIR$/routes/sign.js" />
         <option value="$PROJECT_DIR$/views/sign_history.ejs" />
+        <option value="$PROJECT_DIR$/routes/sign.js" />
       </list>
     </option>
   </component>
@@ -332,7 +328,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21217601" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28379887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28379887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969433" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -398,8 +394,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="31" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="1026">
           <folding>
-            <element signature="e#190#1140#0" expanded="false" />
-            <element signature="e#5246#6302#0" expanded="false" />
+            <element signature="e#5282#6338#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -446,8 +441,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="39" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="437">
           <folding>
-            <element signature="e#190#1140#0" expanded="false" />
-            <element signature="e#5246#6302#0" expanded="false" />
+            <element signature="e#5282#6338#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -639,21 +633,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/sign.js">
+    <entry file="file://$PROJECT_DIR$/views/sign_history.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="44" selection-start="3299" selection-end="3299" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="2869">
+        <state line="33" column="26" selection-start="978" selection-end="978" vertical-scroll-proportion="-16.857143" vertical-offset="60" max-vertical-offset="1121">
           <folding>
-            <element signature="e#190#1140#0" expanded="false" />
-            <element signature="e#5246#6302#0" expanded="false" />
+            <element signature="tag#tr#0;tag#thead#0;tag#table#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/sign_history.ejs">
+    <entry file="file://$PROJECT_DIR$/routes/sign.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="26" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.77303755" vertical-offset="174" max-vertical-offset="1121">
+        <state line="19" column="99" selection-start="828" selection-end="828" vertical-scroll-proportion="0.5879479" vertical-offset="0" max-vertical-offset="3268">
           <folding>
-            <element signature="tag#tr#0;tag#thead#0;tag#table#0;tag#div#0;tag#div#1;tag#div#0" expanded="false" />
+            <element signature="e#5282#6338#0" expanded="false" />
           </folding>
         </state>
       </provider>
