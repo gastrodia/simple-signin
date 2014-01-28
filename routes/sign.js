@@ -22,7 +22,7 @@ exports.routes = function(app){
                 if(rows.length>0){
                     hasSignOut = true;
                 }
-                res.render('sign_in',{title:'签到页面',hasSignIn:hasSignIn,hasSignOut:hasSignOut,now_str:this_moment.format("MM-DD HH:mm")});
+                res.render('sign_in',{title:'签到页面',hasSignIn:hasSignIn,hasSignOut:hasSignOut,now_str:this_moment.format("MM-DD HH:mm"),user:req.session.user});
             });
         })
 
@@ -98,7 +98,8 @@ exports.routes = function(app){
         }
         conn.query('select * from sign where  userid = ' + req.session.user.id,function(err, rows, fields){
             var signList = formatRows(rows);
-            res.render('sign_history',{title:'签到历史',signList:signList});
+            var this_moment = moment();
+            res.render('sign_history',{title:'签到历史',signList:signList,now_str:this_moment.format("YYYY-MM-DD HH:mm"),user:req.session.user});
         })
     });
     app.post('/sign/sign_in',function(req,res){
