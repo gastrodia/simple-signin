@@ -5,11 +5,16 @@ var conn = require('../db').connection;
 var moment = require('moment');
 
 exports.routes = function(app){
+    app.get('/sign/nowSysTime',function(req,res){
+        var this_moment = moment();
+        var nowTime = this_moment.format("YYYY-MM-DD HH:mm");
+        res.json({nowTime:nowTime});
+    })
     app.get('/sign/sign_in',function(req,res){
         hasSignIn = false;
         hasSignOut = false;
         var this_moment = moment();
-        var today = moment({year:this_moment.year(),mouth:this_moment.month(),day:this_moment.date()});
+        var today = moment({year:this_moment.year(),month:this_moment.month(),day:this_moment.date()});
         today_str = today.format("YYYY-MM-DD HH:mm:ss:SSS");
         var sql = "select * from sign where sign_date = '" + today_str + "' and is_sign_in = 1 and userid = " + req.session.user.id;
         console.log(sql);
@@ -22,7 +27,7 @@ exports.routes = function(app){
                 if(rows.length>0){
                     hasSignOut = true;
                 }
-                res.render('sign_in',{title:'签到页面',hasSignIn:hasSignIn,hasSignOut:hasSignOut,now_str:this_moment.format("MM-DD HH:mm"),user:req.session.user});
+                res.render('sign_in',{title:'签到页面',hasSignIn:hasSignIn,hasSignOut:hasSignOut,now_str:this_moment.format("YYYY-MM-DD HH:mm"),user:req.session.user});
             });
         })
 
@@ -58,9 +63,13 @@ exports.routes = function(app){
                 signJson.signDate = moment(record.signDate).format(signJson.signDate);
                 if(record.signInTime){
                     signJson.signInTime = moment(record.signInTime).format(signJson.signInTime);
+                }else{
+                    signJson.signInTime = "";
                 }
                 if(record.signOutTime){
                     signJson.signOutTime = moment(record.signOutTime).format(signJson.signOutTime);
+                }else{
+                    signJson.signOutTime = "";
                 }
                 signJson.signStatus = record.signStatus;
                 return signJson;
@@ -106,7 +115,7 @@ exports.routes = function(app){
 
         var sign_moment = moment();
         var should_sign_moment = moment({hour: 9, minute: 0});
-        var today = moment({year:should_sign_moment.year(),mouth:should_sign_moment.month(),day:should_sign_moment.date()});
+        var today = moment({year:should_sign_moment.year(),month:should_sign_moment.month(),day:should_sign_moment.date()});
         var sign_status = "正常";
         if(sign_moment.isAfter(should_sign_moment)){
             sign_status = "迟到";
@@ -136,7 +145,7 @@ exports.routes = function(app){
 
         var sign_moment = moment();
         var should_sign_moment = moment({hour: 9, minute: 0});
-        var today = moment({year:should_sign_moment.year(),mouth:should_sign_moment.month(),day:should_sign_moment.date()});
+        var today = moment({year:should_sign_moment.year(),month:should_sign_moment.month(),day:should_sign_moment.date()});
         var sign_status = "正常";
         if(sign_moment.isAfter(should_sign_moment)){
             sign_status = "迟到";
@@ -166,7 +175,7 @@ exports.routes = function(app){
 
         var sign_moment = moment();
         var should_sign_moment = moment({hour: 18, minute: 0});
-        var today = moment({year:should_sign_moment.year(),mouth:should_sign_moment.month(),day:should_sign_moment.date()});
+        var today = moment({year:should_sign_moment.year(),month:should_sign_moment.month(),day:should_sign_moment.date()});
         var sign_status = "正常";
         if(sign_moment.isBefore(should_sign_moment)){
             sign_status = "早退";

@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="939029df-7f7c-4b29-8220-a59c4dd8d466" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/updateTime.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/sign.js" afterPath="$PROJECT_DIR$/routes/sign.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sign_history.ejs" afterPath="$PROJECT_DIR$/views/sign_history.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/sign_in.ejs" afterPath="$PROJECT_DIR$/views/sign_in.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/user.js" afterPath="$PROJECT_DIR$/routes/user.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simple-signin.iws" />
@@ -31,55 +33,19 @@
       <file leaf-file-name="user.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="46" selection-start="2719" selection-end="2719" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2185">
+            <state line="19" column="7" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2337">
               <folding>
-                <element signature="e#2487#2536#0" expanded="false" />
+                <element signature="e#519#692#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sign.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/sign.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="7" selection-start="6471" selection-end="6471" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1482">
-              <folding>
-                <element signature="e#1287#3997#0" expanded="false" />
-                <element signature="e#4398#5364#0" expanded="false" />
-                <element signature="e#5413#6469#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simple_signin.sql" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple_signin.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="2" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+            <state line="72" column="17" selection-start="3054" selection-end="3054" vertical-scroll-proportion="1.1512195" vertical-offset="660" max-vertical-offset="4009">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reg.ejs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/reg.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="30" selection-start="751" selection-end="751" vertical-scroll-proportion="-6.928571" vertical-offset="414" max-vertical-offset="1577">
-              <folding>
-                <marker date="1390882032685" expanded="true" signature="52:89" placeholder="{...}" />
-                <marker date="1390882032685" expanded="true" signature="110:183" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sign_history.ejs" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/sign_history.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="18" selection-start="506" selection-end="506" vertical-scroll-proportion="0.5178876" vertical-offset="0" max-vertical-offset="1292">
-              <folding>
-                <element signature="e#368#388#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -87,11 +53,8 @@
       <file leaf-file-name="sign_in.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/sign_in.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="12" selection-start="986" selection-end="1138" vertical-scroll-proportion="-10.178572" vertical-offset="323" max-vertical-offset="2052">
-              <folding>
-                <element signature="e#736#779#0" expanded="true" />
-                <element signature="e#1000#1020#0" expanded="true" />
-              </folding>
+            <state line="17" column="11" selection-start="476" selection-end="476" vertical-scroll-proportion="10.857142" vertical-offset="627" max-vertical-offset="2071">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,11 +87,12 @@
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/views/reg.ejs" />
-        <option value="$PROJECT_DIR$/routes/user.js" />
         <option value="$PROJECT_DIR$/simple_signin.sql" />
-        <option value="$PROJECT_DIR$/routes/sign.js" />
         <option value="$PROJECT_DIR$/views/sign_in.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/updateTime.js" />
         <option value="$PROJECT_DIR$/views/sign_history.ejs" />
+        <option value="$PROJECT_DIR$/routes/user.js" />
+        <option value="$PROJECT_DIR$/routes/sign.js" />
       </list>
     </option>
   </component>
@@ -164,7 +128,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -211,8 +174,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple-signin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple-signin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple-signin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple-signin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -394,28 +390,86 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="37" />
+      <option name="time" value="42" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/reg.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="30" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="1577">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sign_history.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="18" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/sign_in.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="21" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1482">
+        <state line="32" column="12" selection-start="986" selection-end="1138" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2052">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="46" selection-start="2719" selection-end="2719" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2223">
           <folding>
-            <element signature="e#736#779#0" expanded="true" />
-            <element signature="e#1000#1020#0" expanded="true" />
+            <element signature="e#519#692#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/sign.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="7" selection-start="6471" selection-end="6471" vertical-scroll-proportion="0.0" vertical-offset="3097" max-vertical-offset="3838">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple_signin.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="2" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="418">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/reg.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="30" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="414" max-vertical-offset="1577">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sign_history.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="18" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sign_in.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="12" selection-start="986" selection-end="1138" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="2052">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sign_in.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="21" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/sign.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="31" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="1026">
-          <folding>
-            <element signature="e#1287#3997#0" expanded="false" />
-            <element signature="e#4398#5364#0" expanded="false" />
-            <element signature="e#5413#6469#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -433,16 +487,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="608">
-          <folding />
-        </state>
+        <state line="26" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="608" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="22" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="437">
           <folding>
-            <element signature="e#2487#2536#0" expanded="false" />
+            <element signature="e#519#692#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -455,11 +507,7 @@
     <entry file="file://$PROJECT_DIR$/routes/sign.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="39" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="437">
-          <folding>
-            <element signature="e#1287#3997#0" expanded="false" />
-            <element signature="e#4398#5364#0" expanded="false" />
-            <element signature="e#5413#6469#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -467,7 +515,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="1" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="437">
           <folding>
-            <element signature="e#2487#2536#0" expanded="false" />
+            <element signature="e#519#692#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -479,9 +527,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="2" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="247">
-          <folding />
-        </state>
+        <state line="7" column="2" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="247" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
@@ -546,9 +592,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="24" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="164" max-vertical-offset="665">
-          <folding />
-        </state>
+        <state line="12" column="24" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="164" max-vertical-offset="665" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/connect-flash/package.json">
@@ -566,11 +610,6 @@
         <state line="70" column="23" selection-start="1708" selection-end="1708" vertical-scroll-proportion="1.5357968" vertical-offset="0" max-vertical-offset="1577" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.18138425" vertical-offset="0" max-vertical-offset="838" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.WebStorm7/system/extLibs/nodejs-v0.10.24-src/core-modules-sources/lib/http.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="690" column="10" selection-start="19872" selection-end="19872" vertical-scroll-proportion="0.19284065" vertical-offset="12582" max-vertical-offset="40926" />
@@ -583,9 +622,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="33" selection-start="203" selection-end="203" vertical-scroll-proportion="0.27850163" vertical-offset="0" max-vertical-offset="614">
-          <folding />
-        </state>
+        <state line="9" column="33" selection-start="203" selection-end="203" vertical-scroll-proportion="0.27850163" vertical-offset="0" max-vertical-offset="614" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -608,59 +645,63 @@
         <state line="257" column="2" selection-start="5962" selection-end="5962" vertical-scroll-proportion="0.51954395" vertical-offset="4564" max-vertical-offset="6897" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simple_signin.sql">
+    <entry file="file://$PROJECT_DIR$/views/reg.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="2" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
+        <state line="32" column="30" selection-start="751" selection-end="751" vertical-scroll-proportion="-6.928571" vertical-offset="414" max-vertical-offset="1577">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/sign.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/updateTime.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="7" selection-start="6471" selection-end="6471" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1482">
+        <state line="9" column="3" selection-start="200" selection-end="200" vertical-scroll-proportion="0.21626016" vertical-offset="0" max-vertical-offset="615">
           <folding>
-            <element signature="e#1287#3997#0" expanded="false" />
-            <element signature="e#4398#5364#0" expanded="false" />
-            <element signature="e#5413#6469#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="46" selection-start="2719" selection-end="2719" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2185">
-          <folding>
-            <element signature="e#2487#2536#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/reg.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="30" selection-start="751" selection-end="751" vertical-scroll-proportion="-6.928571" vertical-offset="414" max-vertical-offset="1577">
-          <folding>
-            <marker date="1390882032685" expanded="true" signature="52:89" placeholder="{...}" />
-            <marker date="1390882032685" expanded="true" signature="110:183" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/sign_in.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="12" selection-start="986" selection-end="1138" vertical-scroll-proportion="-10.178572" vertical-offset="323" max-vertical-offset="2052">
-          <folding>
-            <element signature="e#736#779#0" expanded="true" />
-            <element signature="e#1000#1020#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/sign_history.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="18" selection-start="506" selection-end="506" vertical-scroll-proportion="0.5178876" vertical-offset="0" max-vertical-offset="1292">
+        <state line="17" column="14" selection-start="597" selection-end="597" vertical-scroll-proportion="-7.464286" vertical-offset="114" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="7" selection-start="364" selection-end="364" vertical-scroll-proportion="0.29131174" vertical-offset="0" max-vertical-offset="587">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple_signin.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="2" selection-start="519" selection-end="519" vertical-scroll-proportion="0.49430895" vertical-offset="0" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="7" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2337">
           <folding>
-            <element signature="e#368#388#0" expanded="true" />
+            <element signature="e#519#692#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sign_in.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="11" selection-start="476" selection-end="476" vertical-scroll-proportion="10.857142" vertical-offset="627" max-vertical-offset="2071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/sign.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="17" selection-start="3054" selection-end="3054" vertical-scroll-proportion="1.1512195" vertical-offset="660" max-vertical-offset="4009">
+          <folding />
         </state>
       </provider>
     </entry>

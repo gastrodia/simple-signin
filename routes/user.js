@@ -7,7 +7,7 @@ var validator = require('validator');
 var crypto = require('crypto');
 
 function isSafeUsername(username){
-    if(/^[a-zA-Z]{1}([a-zA-Z0-9]|[._]){4,19}$/.exec(username)){
+    if(/^[a-zA-Z]{1}([a-zA-Z0-9]){4,19}$/.exec(username)){
        return true;
     }else{
         return false;
@@ -27,6 +27,10 @@ exports.routes = function(app){
     });
     app.post('/user/login',function(req,res){
         var username = req.body.username;
+        if(username == ""||req.body.password == ""){
+            req.flash('error','用户名和密码不能为空!');
+            res.redirect('/user/login');
+        }
         if(username && isSafeUsername(username)){
             var md5 = crypto.createHash('md5');
             var password = md5.update(req.body.password).digest('hex');
@@ -56,8 +60,16 @@ exports.routes = function(app){
         if(!postUser.realname){
             return err_back('真实姓名不能为空');
         }
+        // [\u4E00-\uFA29]|[\uE7C7-\uE7F3]汉字编码范围
+        var chineseChar = new RegExp("^([\u4E00-\uFA29]|[\uE7C7-\uE7F3]|[a-zA-Z0-9])*$");
+        if(!chineseChar.test(postUser.realname)){
+            return err_back('真实姓名中不能含有中文、数字、字母意外的字符');
+        }
+        if(postUser.realname.length>10||postUser.realname.length<1){
+            return err_back('真实姓名只能取1-10个字');
+        }
         if(!isSafeUsername(postUser.username)){
-            return err_back('用户名只能输入5-20个以字母开头、可带数字、“_”、“.”的字串 ')
+            return err_back('用户名只能输入5-20个以字母开头的数字和字母组合！ ')
         }
         if(!postUser.password){
             return err_back("请输入登录密码！");

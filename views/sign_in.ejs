@@ -1,4 +1,5 @@
 <% include header.ejs %>
+<script src="/javascripts/updateTime.js"></script>
 <script>
     function sign_in(){
         $.post('/sign/sign_in',function(res){
@@ -26,7 +27,7 @@
             <blockquote>
                 <p>
                 <h2>上下班登记<button type="button" class="btn btn-primary" style="margin-left: 20px;margin-top: -5px;" onclick="javascript:sign_history();">查看考勤历史</button></h2>
-                </p> <p>当前系统时间 <%=now_str%></p>
+                </p> <p>当前系统时间 <span id="nowTime"><%=now_str%></span></p>
             </blockquote>
         </div>
         <div class="span6 column ui-sortable">
