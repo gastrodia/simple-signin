@@ -9,9 +9,12 @@
     "express": "3.4.8",
     "ejs": "*",
     "mysql":"*",
+    "bookshelf": "0.6.1",
+    "knex": "0.5.0",
     "connect-mysql":"*",
     "connect-flash": "*",
     "validator":"*",
-    "moment":"*"
+    "moment":"*",
+      "when": "2.7.0"
   }
 }

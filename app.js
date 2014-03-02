@@ -9,6 +9,19 @@ var db = require('./db');
 var flash = require('connect-flash');
 var store = require('connect-mysql')(express);
 
+var Knex = require('knex');
+
+Knex.knex = Knex.initialize({
+    client:'mysql',
+    connection:{
+        host: 'localhost',
+        user: 'root',
+        password: 'root',
+        database: 'simple_signin',
+        charset  : 'utf8'
+    }
+})
+
 var app = express();
 
 //all environments

@@ -5,6 +5,9 @@
 var conn = require('../db').connection;
 var validator = require('validator');
 var crypto = require('crypto');
+var knex = require('knex').knex;
+var when = require('when');
+when.pipeline = require('when/pipeline');
 
 function isSafeUsername(username){
     if(/^[a-zA-Z]{1}([a-zA-Z0-9]){4,19}$/.exec(username)){
@@ -83,6 +86,66 @@ exports.routes = function(app){
         var md5 = crypto.createHash('md5');
         var password = md5.update(req.body.password).digest('hex');
 
+
+
+        knex('user').where('username',postUser.username).select()
+            .then(function(resp){
+                if(resp.length>0){
+                    return when.reject({info:'您输入的用户名已存在!',redirect:'/user/reg'});
+                }else{
+                    return knex('user').where('email',postUser.email).select()
+                }
+            })
+            .then(function(resp){
+                if(resp.length>0){
+                    return when.reject({info:'您输入的邮箱已存在!',redirect:'/user/reg'});
+                }else{
+                    return knex('user').returning('id').insert({
+                        username:postUser.username, password:password,
+                        email:postUser.email, realname:postUser.realname
+                    });
+                }
+            })
+            .then(function(resp){
+                if(resp[0]){
+                    req.flash('success','注册成功，返回登录！');
+                    res.redirect('/user/reg');
+                };
+            })
+            .otherwise(function(error){
+                if(error){
+                    req.flash('error',error.info);
+                    res.redirect(error.redirect);
+                }
+            })
+
+
+
+     /*   knex('user').where('username',postUser.username).select()
+            .then(function(resp){
+            if(resp.length>0){
+                req.flash('error','您输入的用户名已存在!');
+                res.redirect('/user/reg');
+            }else{
+                knex('user').where('email',postUser.email).select().then(function(resp){
+                    if(resp.length){
+                        req.flash('error','您输入的邮箱已存在!');
+                        res.redirect('/user/reg');
+                    }else{
+                        knex('user').returning('id').insert({
+                            username:postUser.username,
+                            password:password,
+                            email:postUser.email,
+                            realname:postUser.realname}).then(function(resp){
+                                if(resp[0]){
+                                    req.flash('success','注册成功，返回登录！');
+                                    res.redirect('/user/reg');
+                                };
+                            })
+                    }
+                })
+            }
+        });
         conn.query("select * from user where username = '" + postUser.username + "'",function(err,rows){
             if(err){
                 console.log(err);
@@ -113,7 +176,7 @@ exports.routes = function(app){
                 }
             }
 
-        })
+        })*/
     });
 
 }
